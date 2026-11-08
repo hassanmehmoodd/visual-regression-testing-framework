@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" data-variant="__VARIANT__">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Northstar</title>
+  <link rel="icon" href="/assets/avatar.svg">
+  <link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/libre-baskerville-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/libre-baskerville-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo" aria-hidden="true"></span>
+        <div>
+          <strong>Northstar</strong>
+          <span>Revenue workspace</span>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="#overview" aria-current="page">Overview</a>
+        <a href="#funnels">Funnels</a>
+        <a href="#cohorts">Cohorts</a>
+        <a href="#billing">Billing</a>
+      </nav>
+      <form class="search" role="search">
+        <label for="workspace-search">Search</label>
+        <input id="workspace-search" value="Harbor" readonly>
+      </form>
+    </header>
+
+    <div class="live" aria-label="Session details">
+      <div data-vrt="avatar" class="session-avatar" aria-hidden="true">A</div>
+      <span class="live-label">Request</span>
+      <span data-vrt="random-id" class="live-value">req_pending</span>
+      <span class="live-label">Updated</span>
+      <time data-vrt="timestamp" class="live-value">1970-01-01T00:00:00.000Z</time>
+      <div data-vrt="ad" class="ad">
+        <span class="live-dot" aria-hidden="true"></span>
+        <span data-vrt="ad-copy">Sponsored placement</span>
+      </div>
+    </div>
+
+    <div class="shell">
+      <aside class="sidebar" aria-label="Sections">
+        <a href="#overview" aria-current="page">Overview</a>
+        <a href="#revenue">Revenue</a>
+        <a href="#activation">Activation</a>
+        <a href="#retention">Retention</a>
+        <a href="#settings">Settings</a>
+      </aside>
+
+      <main id="overview">
+        <section class="hero">
+          <div>
+            <p class="eyebrow">Monday overview</p>
+            <h1>Harbor &amp; Co. is ahead of plan</h1>
+          </div>
+          <p class="hero-note">Week 19 · closed-won pipeline is holding above the quarter target.</p>
+        </section>
+
+        <section class="kpis" aria-label="Key metrics">
+          <article class="kpi" data-kpi="revenue">
+            <span>Net revenue</span>
+            <strong>$128,400</strong>
+            <em>+6.2% vs last week</em>
+          </article>
+          <article class="kpi" data-kpi="teams">
+            <span>Active teams</span>
+            <strong>86</strong>
+            <em>4 added this week</em>
+          </article>
+          <article class="kpi" data-kpi="activation">
+            <span>Activation</span>
+            <strong>62%</strong>
+            <em>Goal 60%</em>
+          </article>
+          <article class="kpi" data-kpi="latency">
+            <span>p95 latency</span>
+            <strong>184 ms</strong>
+            <em>Inside the budget</em>
+          </article>
+        </section>
+
+        <section class="split">
+          <article class="card chart-card" id="pipeline">
+            <header>
+              <h2>Pipeline, last 12 weeks</h2>
+              <span>USD, thousands</span>
+            </header>
+            <div class="bars" aria-hidden="true">
+              <span style="height: 46px"></span>
+              <span style="height: 62px"></span>
+              <span style="height: 54px"></span>
+              <span style="height: 78px"></span>
+              <span style="height: 70px"></span>
+              <span style="height: 88px"></span>
+              <span style="height: 74px"></span>
+              <span style="height: 96px"></span>
+              <span style="height: 84px"></span>
+              <span style="height: 110px"></span>
+              <span style="height: 102px"></span>
+              <span style="height: 124px"></span>
+            </div>
+          </article>
+          <article class="card profile" id="profile-card">
+            <header>
+              <h2>Workspace owner</h2>
+            </header>
+            <div class="profile-row">
+              <img src="/assets/avatar.svg" width="48" height="48" alt="">
+              <div>
+                <strong>Avery Chen</strong>
+                <span>Owner · Harbor &amp; Co.</span>
+              </div>
+            </div>
+            <dl>
+              <div><dt>Plan</dt><dd>Analyze</dd></div>
+              <div><dt>Seats</dt><dd>24 of 30</dd></div>
+              <div><dt>Region</dt><dd>us-east</dd></div>
+            </dl>
+          </article>
+        </section>
+
+        <section class="card pricing" id="pricing">
+          <header>
+            <h2>Plans</h2>
+            <span>Billed monthly</span>
+          </header>
+          <div class="tiers">
+            <article>
+              <h3>Observe</h3>
+              <p class="price">$0</p>
+              <ul>
+                <li>1 workspace</li>
+                <li>7-day history</li>
+              </ul>
+            </article>
+            <article class="featured">
+              <h3>Analyze</h3>
+              <p class="price">$49</p>
+              <ul>
+                <li>Unlimited boards</li>
+                <li>Shared cohorts</li>
+              </ul>
+            </article>
+            <article>
+              <h3>Command</h3>
+              <p class="price">$149</p>
+              <ul>
+                <li>SAML and audit log</li>
+                <li>Dedicated support</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="card table-card">
+          <header>
+            <h2>Recent accounts</h2>
+            <span>Static sample</span>
+          </header>
+          <table>
+            <thead>
+              <tr><th>Account</th><th>Stage</th><th>Owner</th><th>Value</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Lumen Freight</td><td>Proposal</td><td>Priya Shah</td><td>$18,200</td></tr>
+              <tr><td>Cedar Clinic</td><td>Won</td><td>Owen Park</td><td>$9,450</td></tr>
+              <tr><td>Northwind Lab</td><td>Discovery</td><td>Mina Alvarez</td><td>$27,000</td></tr>
+              <tr><td>Bright Parcel</td><td>Negotiation</td><td>Theo Marlow</td><td>$14,800</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="card form-card">
+          <header>
+            <h2>Invite a teammate</h2>
+          </header>
+          <form>
+            <label>Name <input value="Jordan Lee" readonly></label>
+            <label>Email <input value="jordan.lee@example.com" readonly></label>
+            <label>Role
+              <input value="Analyst" readonly>
+            </label>
+            <button type="button">Send invite</button>
+          </form>
+        </section>
+      </main>
+    </div>
+  </div>
+  <div data-testid="app-ready" hidden></div>
+  <script src="/app.js"></script>
+</body>
+</html>
