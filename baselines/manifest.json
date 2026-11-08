@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "baselines": {
+    "dashboard/full-page/chromium-desktop": {
+      "key": "dashboard/full-page/chromium-desktop",
+      "file": "dashboard/full-page/chromium-desktop.png",
+      "sha256": "991be064ead53cbde454cf06c58bd2d1e17dfa563fee49bfda8d4493de133f58",
+      "width": 1280,
+      "height": 1180,
+      "bytes": 150985,
+      "approvedAt": "2026-11-08T18:38:06.732Z",
+      "approver": "Hassan Mehmood",
+      "version": 1,
+      "platform": "linux"
+    },
+    "dashboard/full-page/firefox-desktop": {
+      "key": "dashboard/full-page/firefox-desktop",
+      "file": "dashboard/full-page/firefox-desktop.png",
+      "sha256": "582b5b6bf4d276926417df181af810234818e64315dfcd51fbe16641d9f477b4",
+      "width": 1280,
+      "height": 1180,
+      "bytes": 168593,
+      "approvedAt": "2026-11-08T18:38:09.528Z",
+      "approver": "Hassan Mehmood",
+      "version": 1,
+      "platform": "linux"
+    },
+    "dashboard/full-page/webkit-desktop": {
+      "key": "dashboard/full-page/webkit-desktop",
+      "file": "dashboard/full-page/webkit-desktop.png",
+      "sha256": "512c8cba32de0d84b4142cda761b8fb4126edf670b44de44f52f4a7511ef19b3",
+      "width": 1280,
+      "height": 1180,
+      "bytes": 158030,
+      "approvedAt": "2026-11-08T18:38:09.459Z",
+      "approver": "Hassan Mehmood",
+      "version": 1,
+      "platform": "linux"
+    },
+    "dashboard/pricing/chromium-desktop": {
+      "key": "dashboard/pricing/chromium-desktop",
+      "file": "dashboard/pricing/chromium-desktop.png",
+      "sha256": "15e12c60c235d7aee82702f66996a0b5d6e8a6e776d327bfaacd04bb836862c0",
+      "width": 1048,
+      "height": 176,
+      "bytes": 25846,
+      "approvedAt": "2026-11-08T18:38:07.367Z",
+      "approver": "Hassan Mehmood",
+      "version": 1,
+      "platform": "linux"
+    },
+    "dashboard/responsive/chromium-mobile": {
+      "key": "dashboard/responsive/chromium-mobile",
+      "file": "dashboard/responsive/chromium-mobile.png",
+      "sha256": "7da96d16c79127f60e6c4df23e6363bc97da7df478e88bcd48b55481c09d9f5a",
+      "width": 390,
+      "height": 2159,
+      "bytes": 136329,
+      "approvedAt": "2026-11-08T18:40:52.954Z",
+      "approver": "Hassan Mehmood",
+      "version": 1,
+      "platform": "linux"
+    },
+    "dashboard/responsive/chromium-tablet": {
+      "key": "dashboard/responsive/chromium-tablet",
+      "file": "dashboard/responsive/chromium-tablet.png",
+      "sha256": "e9444ec1246576f1285cfbfd3e64beffb559bfe09e18013e1ff1bcb4975b9adf",
+      "width": 768,
+      "height": 2067,
+      "bytes": 143445,
+      "approvedAt": "2026-11-08T18:40:53.024Z",
+      "approver": "Hassan Mehmood",
+      "version": 1,
+      "platform": "linux"
+    },
+    "dashboard/viewport/chromium-desktop": {
+      "key": "dashboard/viewport/chromium-desktop",
+      "file": "dashboard/viewport/chromium-desktop.png",
+      "sha256": "3a6444784cb5117b75ea3b2a3f144ac197f9f0b51dc5bdbe695e7ddad1332d76",
+      "width": 1280,
+      "height": 800,
+      "bytes": 115469,
+      "approvedAt": "2026-11-08T18:38:06.660Z",
+      "approver": "Hassan Mehmood",
+      "version": 1,
+      "platform": "linux"
+    },
+    "dimensions/mismatch/chromium-desktop": {
+      "key": "dimensions/mismatch/chromium-desktop",
+      "file": "dimensions/mismatch/chromium-desktop.png",
+      "sha256": "9904429a9af5da3903a65a788a585711fd3a6aff6b1925e0949de0cff24134da",
+      "width": 48,
+      "height": 48,
+      "bytes": 154,
+      "approvedAt": "2026-11-08T18:38:10.120Z",
+      "approver": "Hassan Mehmood",
+      "version": 1,
+      "platform": "linux"
+    }
+  }
+}
