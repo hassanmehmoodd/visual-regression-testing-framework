@@ -1,0 +1,57 @@
+{
+  "name": "visual-regression-testing-framework",
+  "version": "1.0.0",
+  "description": "Reusable visual regression testing framework with Playwright screenshots, pixel-level diffs, manual baseline approval, and a self-contained HTML report.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Hassan Mehmood",
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hassanmehmoodd/visual-regression-testing-framework.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hassanmehmoodd/visual-regression-testing-framework/issues"
+  },
+  "homepage": "https://github.com/hassanmehmoodd/visual-regression-testing-framework#readme",
+  "keywords": [
+    "visual-regression",
+    "playwright",
+    "pixelmatch",
+    "qa-automation",
+    "screenshot-testing",
+    "baselines"
+  ],
+  "scripts": {
+    "demo": "tsx demo/server.ts",
+    "test": "npm run test:unit && npm run test:visual",
+    "test:unit": "node --import tsx --test tests/unit/*.test.ts",
+    "test:visual": "playwright test",
+    "test:visual:update": "VRT_UPDATE_BASELINES=1 playwright test --project=chromium --project=firefox --project=webkit tests/visual/matching.spec.ts tests/visual/responsive.spec.ts tests/visual/browsers.spec.ts",
+    "baseline:approve": "tsx src/cli/approve.ts",
+    "baseline:verify": "tsx src/cli/verify.ts",
+    "baseline:seed-dimension": "tsx scripts/seed-dimension-baseline.ts",
+    "docs:export": "tsx scripts/export-examples.ts",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "ci": "npm run lint && npm run typecheck && npm test"
+  },
+  "dependencies": {
+    "@playwright/test": "1.65.0",
+    "pixelmatch": "8.0.0",
+    "pngjs": "7.0.0",
+    "sharp": "0.35.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.5",
+    "@types/node": "22.20.5",
+    "@types/pngjs": "6.0.5",
+    "eslint": "9.39.5",
+    "globals": "17.14.0",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.72.1"
+  }
+}
