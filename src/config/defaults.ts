@@ -1,0 +1,31 @@
+import type { VrtConfig } from './types';
+
+export const defaultConfig: VrtConfig = {
+  baselineDir: 'baselines',
+  actualDir: 'test-results/visual/actual',
+  diffDir: 'test-results/visual/diff',
+  pendingDir: 'test-results/visual/pending',
+  reportDir: 'test-results/visual/report',
+  resultsDir: 'test-results/visual/results',
+  historyDir: 'baselines/history',
+  threshold: 0.1,
+  maxDiffPixelRatio: 0.002,
+  maxDiffPixels: null,
+  ignoreAntialiasing: true,
+  updateBaselines: false,
+  padDimensionMismatch: true,
+  includePlatform: false,
+  masks: [],
+  viewports: {
+    desktop: { width: 1280, height: 800 },
+    tablet: { width: 768, height: 1024 },
+    mobile: { width: 390, height: 844 },
+  },
+  defaultViewport: 'desktop',
+  approver: 'manual',
+  requiredSelectors: [],
+  waitForNetworkIdle: true,
+  waitForFonts: true,
+  waitForImages: true,
+  disableAnimations: true,
+};
